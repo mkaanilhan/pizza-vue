@@ -1,20 +1,17 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
-
+import Header from './components/Header.vue'
 export default {
 
-  data() {
-    return {
+  components: { Header },
 
-      baseUrl: 'https://669a57039ba098ed61ff463c.mockapi.io/api/v1/pizzas'
-    }
-  }
+
 }
 </script>
 
 <template>
 
-  <div class='text-xl'>Welcome</div>
+  <Header />
 
   <RouterView />
 </template>
